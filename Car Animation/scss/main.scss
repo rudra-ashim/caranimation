@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    width: 100vw;
+}
+.continer{
+width: 100vw;
+height: 100vh;
+position: relative;
+
+// sky-div-style**********************************
+
+  .sky_bg{
+      background: url(../img/background.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100vw;
+      height: 100vh;
+    
+
+    //   trees-div-style********************
+
+      .trees{
+          position: relative;
+          bottom: 18vh;
+          height: 100vh;
+          width: 100vw;
+          background: url(../img/trees.png);
+          background-repeat: no-repeat;
+      }
+    //   strits-div-style******************
+
+      .strits{
+        width: 100000vw;
+        height: 30vh;
+        background: url(../img/track.png);
+        background-repeat: repeat-x;
+        position: absolute;
+        bottom: 0vh;
+        animation: carMove linear 13s infinite;
+    }
+
+    // carbody & whhiil Style****************
+
+    .car_body{
+        position: absolute;
+        top: 58vh;
+        left: 30vw;
+        background: url(../img/car_body.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position:  center;
+        height: 30vh;
+        width: 30vw;
+        animation: shake linear .3s infinite;
+
+        .wheel1 img{
+            width: 6vw;
+            top: 12.5vh;
+            position: relative;
+            left: 3.5vw;
+            animation: wheel_rotation linear .2s infinite;
+        }
+        
+        
+        .wheel2 img{
+            width: 6.5vw;
+            top: -0.5vh;
+            position: relative;
+            left: 18.5vw;
+            animation: wheel_rotation linear .2s infinite;
+        }
+        }    
+    }
+  }
+
+  @keyframes wheel_rotation{
+        100%{
+            transform: rotate(306deg);
+        }
+  }
+  @keyframes carMove
+{
+    100%{
+        transform: translateX(-500vw);
+    }
+}
+
+@keyframes carMove
+{
+    100%{
+        transform: translateX(-500vw);
+    }
+}
+
+
+@keyframes shake
+{
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+@keyframes shakebody
+{
+    0%{
+        transform: translateX(-50px);
+    }
+    50%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(-50px);
+    }
+}

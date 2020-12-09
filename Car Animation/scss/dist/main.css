@@ -1,0 +1,30 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.continer {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.continer .sky_bg {
+  background: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.continer .sky_bg .trees {
+  height: 100vh;
+  width: 100vw;
+  background: url(../img/trees.png);
+  background-repeat: no-repeat;
+}
+.continer .sky_bg .strits {
+  width: 800vh;
+  height: 100%;
+  background: #000;
+}
